@@ -63,7 +63,7 @@ public class SBIAccount implements Bankinterface {
     @Override
     public String depositMoney(int amount) {
         this.balance+=amount;
-        return "Amount withdrawn: " + amount;
+        return "Amount credited: " + amount;
     }
 
     @Override
@@ -74,7 +74,7 @@ public class SBIAccount implements Bankinterface {
             }
             else{
                 balance-=amount;
-                return "Money Deducted";
+                return "Amount Debited";
             }
         }
         else{
